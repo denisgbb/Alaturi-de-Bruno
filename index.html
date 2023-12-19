@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Albu Denis">
+    <meta name="keywords" content="ong animale, catei, adoptie, adoptie caini">
+    <meta name="description" content="Alaturi de Bruno este un ONG din Cluj-Napoca care se ocupa de animalele parasite de pe strazi.
+         Noi incercam sa le gasim o familie si sa le oferim o casa primitoare.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <title>
+        Alături de Bruno
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .logo {
+            width: 25;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px;
+            background-color: rgb(5, 33, 158);
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 5px;
+        }
+
+        nav li {
+            margin: 10px;
+        }
+
+        nav li a {
+            display: block;
+            white-space: nowrap;
+            color: rgb(246, 241, 241);
+            padding: 3px;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: rgb(5, 33, 158);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Ephesis'
+
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+            font-family: 'Ephesis';
+            font-size: 40px
+        }
+
+        .button {
+            background-color: rgb(128, 205, 241)
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        .center {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            border-radius: 23%;
+            outline: 1px solid rgb(25, 25, 28)
+        }
+
+        h3 {
+            text-align: center;
+            padding: 30px;
+            font-family: 'Ephesis';
+        }
+
+        .container {
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+
+        .column {
+            flex: 1;
+            width: 25%;
+            margin: 20px;
+            box-sizing: border-box;
+            border: 15px solid rgb(113, 187, 221);
+            border-radius: 8px;
+            background-color: rgb(128, 205, 241);
+        }
+
+        .text-column {
+            flex: 1;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+
+        .image-column {
+            flex: 1;
+            text-align: center;
+        }
+
+
+        .image-column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 80%
+        }
+
+        .card {
+            flex: 1;
+            width: 25%;
+            margin: 20px;
+            box-sizing: border-box;
+            border: 15px solid rgb(113, 187, 221);
+            border-radius: 8px;
+            background-color: rgb(128, 205, 241);
+
+        }
+
+        .poza-rotunda {
+            display: block;
+
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            outline: 1px solid rgb(196, 229, 239);
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+
+        .date-de-contact {
+            text-align: center;
+            margin-bottom: 50px;
+
+        }
+
+        footer {
+            font-size: 14px;
+            background-color: rgb(5, 33, 158);
+        }
+
+        .footer-container {
+            width: 100%;
+        }
+
+        .iconite img {
+            text-decoration: none;
+            padding: 3px;
+            background-color: rgb(114, 170, 238);
+            margin: 10px;
+            border-radius: 50%;
+            justify-content: center;
+        }
+
+        .facebook {
+            width: 40px;
+        }
+
+        .instagram {
+            width: 40px;
+
+        }
+
+        .telefon {
+            width: 35px;
+        }
+
+        @media (min-width: 768px) {
+            .column {
+                max-width: 48%;
+            }
+
+            .footer-container {
+                max-width: 100%;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column {
+                flex-basis: 100%;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img class="logo" src="animale/paw.jpg" alt="Bootstrap"
+                                class="d-inline-block align-text-top">
+                        </a>
+                    </div>
+                </div>
+                <button class="navbar-toggler button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="navbar">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#acasa">Acasă</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#servicii">Servicii</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#adoptii">Adopții</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#donatii">Donații</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h1>Alături de Bruno</h1>
+                    <img src="animale/animalute (13).jpg" class="d-block w-100" alt="Cabinet Veterinar">
+                </div>
+                <div class="carousel-item">
+                    <img src="animale/dogoo (2).jpg" class="d-block w-100" alt="Caine pug negru">
+                </div>
+                <div class="carousel-item">
+                    <img src="animale/w (47).jpg" class="d-block w-100" alt="Femeie">
+                </div>
+                <div class="carousel-item">
+                    <img src="animale/doggo (3).jpg" class="d-block w-100" alt="Caine pug negru">
+                </div>
+                <div class="carousel-item">
+                    <img src="animale/m (13).jpg" class="d-block w-100" alt="Barbat la laptop">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <div class="Bruno" id="Acasa">
+        <h2>Introducere</h2>
+        <div class="container">
+            <div class="text-column">
+                <p>
+                    ONG-ul "Alături de Bruno" din Cluj-Napoca a început că un mic proiect din momentul în care Bruno a
+                    fost
+                    salvat de către noi și adus la cabinetul nostru. Bruno, după ce a fost salvat, a căpătat titlul de
+                    "Companionul cabinetului". Locuința lui este aici, cu noi, având parte de o familie numeroasă și de
+                    mulți
+                    prieteni care vizitează cabinetul nostru. Acești "prieteni" sunt alte animale care au fost în
+                    aceeași
+                    situație că a lui Bruno.
+                </p>
+            </div>
+            <div class="image-column">
+                <img src="animale/animalute (6).jpg" alt="Caine cu lant la gat">
+            </div>
+        </div>
+        <div class="ocupatie" id="servicii">
+            <h2>Cu ce ne ocupăm?</h2>
+            <div class="container">
+                <div class="text-column">
+                    <p>Avem ca principal obiectiv protejarea și îmbunătățirea bunăstării animalelor. Noi desfășurăm o
+                        varietate de
+                        activități pentru a atinge acest obiectiv. Acestea sunt câteva dintre aspectele cu care ne
+                        ocupăm:</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="column">
+
+                <h3>Adopții și îngrijire</h3>
+                <p>Un ONG cu animale poate facilita adopții responsabile, găsind case potrivite pentru animalele
+                    abandonate sau maltratate. Putem oferi îngrijire temporară sau permanentă pentru animalele care au
+                    nevoie de protecție.</p>
+            </div>
+
+            <div class="column">
+
+                <h3>Campanii de conștientizare</h3>
+                <p>Desfășurăm campanii de conștientizare pentru a educa publicul cu privire la nevoile și drepturile
+                    animalelor. Putem viza reducerea abandonului de animale, promovarea sterilizării, combaterea
+                    cruzimii față de animale și alte aspecte relevante.</p>
+            </div>
+
+            <div class="column">
+
+                <h3>Asistență veterinară</h3>
+                <p>Noi oferim servicii veterinare pentru animalele fără stăpân sau cele aflate în dificultate
+                    financiară. Aceasta poate include tratament medical, sterilizare și alte servicii de îngrijire
+                    veterinară.</p>
+            </div>
+
+            <div class="column">
+
+                <h3>Reacții de urgență</h3>
+                <p>Intervenim în situații de urgență, cum ar fi dezastre naturale sau cazuri de maltratare severă,
+                    pentru a
+                    salva și a oferi îngrijire imediată animalelor afectate.</p>
+            </div>
+        </div>
+        <div class="container " id="adoptii">
+            <h2>Adoptă</h2>
+            <p>Aceasta este secțiunea pentru adopție. Din păcate, avem câteva cazuri nefericite, iar unii dintre
+                prietenii lui Bruno nu au avut norocul de a găsi până acum un adăpost sigur. Mai jos sunt prezentate
+                toate animăluțele disponibile pentru adopție.</p>
+            <div class="column">
+                <img src="animale/animalute (3).jpg" alt="O catelusa uda" class="poza-rotunda" />
+                <div class="card-body">
+                    <h3 class="card-title">Bella</h3>
+                    <p class="card-text">Într-un colț uitat al unui sat mic, un cățel cu blana încâlcită și murdară,
+                        pe
+                        nume Bella. Cu toate acestea, Bella păstra o privire tristă și o coadă timidă, amintindu-și
+                        poate de vremurile mai bune. Ea a fost adusă la sediul nostru, iar acum așteaptă să fie
+                        adoptată. </p>
+                    <a href="#contact" class="btn btn-primary">Adopta</a>
+                </div>
+            </div>
+            <div class="column">
+                <img class="poza-rotunda" src="animale/animalute (2).jpg" alt="Un caine bandajat" />
+                <div class="card-body">
+                    <h3 class="card-title">Zorro</h3>
+                    <p class="card-text">Pe strazile abandonate, se afla un cățel numit Zorro. Cu blana lui neagră
+                        și ochii plini de tristețe, Zorro a fost adus în adăpostul nostru de către un trecător
+                        grijuliu care l-a găsit pe stradă, bolnav și slăbit. </p>
+                    <a href="#contact" class="btn btn-primary">Adopta</a>
+                </div>
+            </div>
+            <div class="column">
+                <img class="poza-rotunda" src="animale/animalute (12).jpg"
+                    alt="O pisica tinuta in brate de veterinar" />
+                <div class="card-body">
+                    <h3 class="card-title">Luna</h3>
+                    <p class="card-text">Maria a dus-o pe Luna la veterinar pentru o evaluare completă. S-a dovedit
+                        că Luna avea nevoie de îngrijiri medicale. Starea ei de sănătate s-a îmbunătățit treptat. Ea o
+                        sa fie foarte
+                        fericita daca gaseste o casa primitoare cu parinti iubitori. </p>
+                    <a href="#contact" class="btn btn-primary">Adopta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="donatii" class="container">
+        <h2>Donează</h2>
+        <p>Dacă nu doriți să adoptați un animăluț din adăpostul nostru, dar vreți să contribuiți cu ajutor, va punem la
+            dispoziție soluția de a oferi suport financiar pentru animale.
+        </p>
+        <p>Există mai multe motive pentru care oamenii ar alege să doneze pentru un adăpost. Iată câteva dintre aceste
+            motive:
+
+        <ul>
+            <li>Ajutorarea celor în nevoie: Adăposturile oferă un loc sigur și adăpostit pentru persoanele fără adăpost
+                sau aflate în situații dificile. Prin donații, poți contribui la furnizarea acestor servicii esențiale
+                și la îmbunătățirea calității vieții celor afectați.</li>
+
+            <li>Sprijinirea comunității: Adăposturile pot juca un rol semnificativ în comunitate, oferind sprijin nu
+                doar celor fără adăpost, ci și familiilor aflate în dificultate. Prin donații, contribui la susținerea
+                comunității în ansamblu.</li>
+
+            <li>Combaterea sărăciei și excluziunii sociale: Donațiile către adăposturi pot ajuta la reducerea sărăciei
+                și excluziunii sociale, oferind un mediu sigur și resurse necesare pentru cei care se confruntă cu
+                astfel de probleme.</li>
+
+            <li> Îmbunătățirea condițiilor de viață: Fondurile donate pot fi folosite pentru a îmbunătăți condițiile de
+                viață din adăposturi, oferind acces la alimente, îngrijire medicală, asistență educațională și alte
+                resurse esențiale.</li>
+        </ul>
+        </p>
+
+
+    </div>
+    <div id="contact" class="date-de-contact">
+        <h3>Contact</h3>
+        <br>
+        <p> Cluj-Napoca</p>
+
+        <p><br>Calea Mănăștur 3-5,Cluj-Napoca 400372</p>
+        <br>Telefon
+        <br>
+        <p>074*****55</p></br>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="iconite">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="animale/facebook.png" class="facebook" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="animale/instagram.png" class="instagram" alt="Instagram Icon"></a>
+                <img src="animale/telephone.png" class="telefon" alt="Telefon Icon">
+            </div>
+        </div>
+        <div class="Nume">
+            <p> &copy; 2023 Albu Denis. Toate drepturile rezervate. </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
